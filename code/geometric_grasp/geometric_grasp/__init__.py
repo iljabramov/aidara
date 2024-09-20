@@ -1,1 +1,0 @@
-"""Geometric grasp generation."""

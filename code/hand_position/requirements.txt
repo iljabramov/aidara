@@ -1,2 +1,0 @@
-numpy
-ros2-numpy
