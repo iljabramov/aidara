@@ -20,8 +20,7 @@ setup(
     license="MIT",
     entry_points={
         "console_scripts": [
-            "controller = staubli_controller.staubli_controller:main",
-            "gripper = staubli_controller.staubli_gripper:main",
-        ],
+            "controller = staubli_controller.staubli_controller:main",        
+            ],
     },
 )
