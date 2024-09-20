@@ -6,8 +6,8 @@ from enum import Enum
 class RobotName(Enum):
     """Enum class with valid robot names."""
 
-    FRANKA = "franka"
-    STAUBLI = "staubli"
+    VBOT = "vbot"
+    PEPPER = "pepper"
 
     def __str__(self) -> str:
         """Format the enum variant."""
