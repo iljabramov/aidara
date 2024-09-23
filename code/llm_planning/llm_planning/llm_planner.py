@@ -38,7 +38,7 @@ class LLMPlanner(Node):
 
     def __init__(
         self,
-        llm_type: Literal["gemini", "gpt-4"],
+        llm_type: Literal["gpt-4"],
         examples_vision_mode: VisionMode,
         request_vision_mode: VisionMode,
         prompt_version: str,
@@ -152,7 +152,7 @@ def main(args: list[str] | None = None) -> None:
             " This prints the response of the LLM and returns."
         ),
     )
-    parser.add_argument("--llm", choices=["gemini", "gpt-4"], default="gpt-4")
+    parser.add_argument("--llm", choices=[ "gpt-4"], default="gpt-4")
     parser.add_argument("--robot", choices=["franka", "staubli"], default="franka")
     parser.add_argument(
         "--examples-vision-mode",

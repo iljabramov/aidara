@@ -26,7 +26,7 @@ def generate_launch_description() -> LaunchDescription:
         "llm",
         default_value="gpt-4",
         description="The LLM the planner uses.",
-        choices=["gemini", "gpt-4"],
+        choices=[ "gpt-4"],
     )
     prompt_version = DeclareLaunchArgument(
         "prompt_version",

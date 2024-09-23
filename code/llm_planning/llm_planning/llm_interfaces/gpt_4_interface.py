@@ -165,7 +165,7 @@ class GPT4PInterface(LLMInterface):
         self._prompt = _compose_prompt(self._base_prompt["messages"].copy())
 
     def append_error(self, error: str) -> None:
-        """Add a retrieved error to the chat history of Gemini."""
+        """Add a retrieved error to the chat history of GPT4."""
         messages = [
             {
                 "role": "system",
