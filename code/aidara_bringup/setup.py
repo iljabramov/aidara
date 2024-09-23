@@ -22,13 +22,6 @@ setup(
                 for file in (package_dir / "launch").glob("*launch.py")
             ],
         ),
-        (
-            str(Path("share") / package_name / "static_transforms"),
-            [
-                str(static_transforms_dir / "franka_transforms.yaml"),
-                str(static_transforms_dir / "staubli_transforms.yaml"),
-            ],
-        ),
     ],
     install_requires=["setuptools"],
     zip_safe=True,

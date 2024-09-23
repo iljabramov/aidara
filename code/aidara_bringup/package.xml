@@ -7,7 +7,6 @@
   <maintainer email="pramanathan@student.ethz.ch">aidara</maintainer>
   <license>MIT</license>
 
-  <depend>franka_bringup</depend>
   <depend>ros2launch</depend>
 
   <exec_depend>launch</exec_depend>
