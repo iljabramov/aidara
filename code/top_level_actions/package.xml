@@ -6,6 +6,7 @@
   <description>Top-level actions for the LLM planner.</description>
   <maintainer email="jonpai@ethz.ch">aidara</maintainer>
   <license>MIT</license>
+  <depend>ros2_numpy</depend>
 
   <export>
     <build_type>ament_python</build_type>

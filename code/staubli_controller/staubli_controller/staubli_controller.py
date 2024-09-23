@@ -9,7 +9,6 @@ import socket
 
 import numpy as np
 import rclpy
-from control_msgs.action import FollowJointTrajectory
 from geometry_msgs.msg import Quaternion, TransformStamped, Vector3
 from rclpy.action import ActionServer
 from rclpy.action.server import ServerGoalHandle
