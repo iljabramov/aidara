@@ -66,3 +66,9 @@ Consult the module READMEs for further information.
 ### Alfred, put all the food on the blue paper, all the writing utensils on the red paper and all the tools on the green paper
 
 [![sort by category](http://markdown-videos-api.jorgenkh.no/youtube/0YvUgXeePtg)](https://youtu.be/0YvUgXeePtg)
+
+
+
+
+cmake_minimum_required(VERSION 3.15)
+colcon build --cmake-args "-DCMAKE_PREFIX_PATH=$CONDA_PREFIX -DPython_EXECUTABLE=$CONDA_PREFIX/bin/python -DPython3_EXECUTABLE=$CONDA_PREFIX/bin/python -DPYTHON_EXECUTABLE=$CONDA_PREFIX/bin/python -DPython3_FIND_STRATEGY=LOCATION -DPython_FIND_STRATEGY=LOCATION"

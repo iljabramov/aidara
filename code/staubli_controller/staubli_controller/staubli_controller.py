@@ -7,15 +7,9 @@ commands and receives the current joint positions and publishes them.
 
 import socket
 
-import numpy as np
 import rclpy
-from geometry_msgs.msg import Quaternion, TransformStamped, Vector3
-from rclpy.action import ActionServer
-from rclpy.action.server import ServerGoalHandle
 from rclpy.executors import ExternalShutdownException, MultiThreadedExecutor
 from rclpy.node import Node
-from sensor_msgs.msg import JointState
-from trajectory_msgs.msg import JointTrajectoryPoint
 
 from aidara_common.tf_utils import TfMixin
 
@@ -63,7 +57,6 @@ class StaubliController(Node, TfMixin):
         self._read_setup()
         self._control_setup()
 
-
     def _read_setup(self) -> None:
         """Initialize socket for reading joint position."""
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -81,7 +74,6 @@ class StaubliController(Node, TfMixin):
             s.listen()
             self._conn_control, address = s.accept()
         self.get_logger().info(f"Connection for commands from: '{address}'.")
-
 
     def _reset_socket_connections(self) -> None:
         """Close the existing connections and setup new sockets."""

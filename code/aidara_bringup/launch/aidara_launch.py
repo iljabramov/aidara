@@ -9,11 +9,11 @@ from launch.actions import (
     DeclareLaunchArgument,
     OpaqueFunction,
 )
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 from aidara_common.types import RobotName
+
 
 def generate_launch_description() -> LaunchDescription:
     """
@@ -26,7 +26,7 @@ def generate_launch_description() -> LaunchDescription:
         "llm",
         default_value="gpt-4",
         description="The LLM the planner uses.",
-        choices=[ "gpt-4"],
+        choices=["gpt-4"],
     )
     prompt_version = DeclareLaunchArgument(
         "prompt_version",
